@@ -1,0 +1,479 @@
+*{padding: 0;
+margin: 0;
+box-sizing:border-box;}
+body{
+    background-color: rgb(14, 13, 13);
+    color:white
+}
+
+/* INICIO Barra superior */
+.topBar{
+    height:7em;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 10em;
+}
+.topBar__div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: "socials . bb flicker contact";
+    justify-content: space-evenly;
+}
+.socials{
+align-self: center;
+    width: 100%;
+    grid-area:socials;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+}
+
+.logo__div{
+    grid-area: bb;
+    position: relative;
+    top: 5em;
+    /* margin: 0em 15em 0em 15em; */
+}
+.logo{
+    width:20em;
+    
+}
+.flickerDiv{
+    grid-area: flicker;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.flicker{
+    font-family:'Gloria Hallelujah', cursive;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.contact{
+    /* margin: 0em 5em 0em 5em; */
+    grid-area: contact;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#num{
+    color: rgb(255, 255, 255);
+    font-family:'Gloria Hallelujah', cursive;
+    font-weight: 600;
+    font-size:1.2em;
+    
+}
+
+
+/* FIN Barra superior */
+
+/* INICIO Main */
+.intro{
+    width:100%;
+    min-height: 55em;
+    background-image: url(../img/coffee_mountain_cut2.png);
+    background-repeat: repeat;
+    display: flex;
+}
+
+.title{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5em;
+    padding: 0.5em;
+}
+.sub{
+    font-family:'Merienda', cursive; 
+    font-size: 1.5em;
+    position: relative;
+    top: -2em;
+    left: 1em;
+    
+
+}
+.slogan{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'Merienda', cursive;
+    
+    font-size: 3em;
+    text-align: right;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.661) ;
+}
+#unfold{
+    position: relative;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    height: 880px;
+    max-width:300px;
+    padding: 1em 2em;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    transition: .3s;
+    z-index: 10px;
+}
+
+#hide{
+    position: relative;
+    left: -1.6em;
+    visibility: hidden;
+    transition: .3s;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+p{
+    font-family: 'Merienda', cursive; 
+}
+.opciones{
+    font-family: 'Bad Script', cursive;
+    color: white;
+    font-size: 2em;
+    padding: 0.2em;
+
+}
+
+/* INICIO Section1 */
+.section1{
+    width: 100%;
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.round1{
+    border-radius: 0 2% 0 0;
+}
+.round2{
+    border-radius: 0 0 2% 0;
+}
+.sec1div{
+    width:100%;
+    max-width: 800px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#col2{
+    display: flex;
+    flex-direction: column;
+}
+.sec1__img{
+    max-width: 18.3em;
+    margin:0.2em;
+}
+.big{
+    font-family: 'Neucha', cursive;
+    font-size: 3em;
+    margin: 0.3em;
+}
+.phrase1{
+    margin-right: 1.5em;
+}
+.phrase2{
+    align-self: flex-end;
+}
+#coffee{
+    width: 100%;
+    max-width:30.1em;
+    margin:0.2em;
+    border-radius: 2% 0 0 2%;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+#croissant{
+    position: relative;
+    right: 0;
+    transition: 0.3s;
+}
+#filter{
+    position: relative;
+    right: 0;
+    transition: 0.3s;
+    
+}
+#breakfast{
+    position: relative;
+    right: 0;
+    transition: 0.3s;
+}
+/* INICIO SECTION2 */
+.section2{
+    padding: 2em 0em;
+    height: 25em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    padding: 1em;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+}
+/* FIN SECTION2 */
+/* INICIO SECTION3 */
+.section3{
+    display: grid;
+  place-items: center;
+  padding: 3em;
+}
+
+.slider{
+    margin: 2em;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2%;
+  }
+
+.slide {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+
+  .sec3__div{
+    display: flex;
+    flex-direction: column;
+  }
+
+.sec3__p{
+font-family: 'Neucha', cursive; 
+text-align: center;
+font-size: 1.5em;
+padding: 0.5em;
+  }
+.break1{
+    width: 100%;
+    max-width: 50em;
+    margin-top: 1.5em;
+  }
+.break2{
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 1em;
+    margin-top: 1em;
+    width: 100%;
+    width: 28em;
+  }
+
+  /* INICIO NEWS */
+.news{
+    width: 100%;
+    color: black;
+  height: 20em;
+  background-color: rgb(255,255,255);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4em 0em;
+}
+.news__title{
+    font-family: 'Bad script', cursive;
+    font-weight: 800;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.news__txt{
+    font-family: 'Neucha', cursive;
+    padding-bottom: 2em;
+}
+form{
+    width: 100%;
+    max-width: 800px;
+    margin: 1em;
+}
+  .form__item{
+    padding: 0.5em;
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+}
+.boton{
+    color: white;
+    background-color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1em;
+    padding: 0.3em 0.5em;
+}
+.campo{
+    font-size: 1em;
+    box-shadow:4px 5px 15px 4px rgba(0, 0, 0, 0.461);
+    width: 100%;
+    max-width: 30em;
+}
+  /* FIN NEWS */
+/* INICIO FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 0em 5em;
+}
+.footer__div{
+    display: grid;
+    margin: 5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "carta face insta tiktok order";
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+    
+}
+.footer__menu{
+    grid-area: carta;
+    padding: 0.5em;
+}
+.insta{
+    grid-area: insta;
+    padding: 0.5em;
+}
+.face{
+    grid-area: face;
+    padding: 0.5em;
+}
+.tiktok{
+    grid-area: tiktok;
+}
+.footer__img{
+    width: 100%;
+    border-radius: 2%;
+}
+.order{
+    padding: 0.5em;
+    height: 100%;
+    grid-area: order;
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sign sign sign"
+    "wpp rappi pedidos";
+}
+.sign{
+    grid-area: sign;
+    font-family: 'Neucha', cursive;
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 3%;
+    color: black;
+}
+.wpp{
+    grid-area: wpp;
+}
+.pedidos{
+    grid-area: pedidos;
+}
+.rappi{
+    grid-area:rappi
+}
+.order__img{
+    width: 100%;
+    border-radius: 4%;
+}
+.footer__div2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blends{ 
+    width: 100%;
+    max-width: 200px;
+}
+.blends h4{
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+}
+.credits{
+    font-family: 'Neucha', cursive;
+    padding: 1em;
+    padding-left: 2em;
+    text-align: center;
+}
+
+/* INICIPO PAGE BEANS */
+.beans__main{
+    width:100%;
+    display: flex;
+}
+
+
+
+a:link{
+    text-decoration: none;
+}
+/* font-family: 'Bad Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Neucha', cursive; */

@@ -98,21 +98,17 @@ align-self: center;
 .sub{
     font-family:'Merienda', cursive; 
     font-size: 1.5em;
-    position: relative;
-    top: -2em;
-    left: 1em;
-    
-
+    position: relative; 
 }
 .slogan{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    font-family: 'Merienda', cursive;
-    
-    font-size: 3em;
+    position: relative;
+    top: 2em;
+    right: -7em;
+    font-family: 'Neucha', cursive;  
+    font-size: 5em;
     text-align: right;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.661) ;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.661);
+    line-height: 1em;
 }
 #unfold{
     position: relative;
@@ -218,6 +214,29 @@ p{
     right: 0;
     transition: 0.3s;
 }
+.coffeehid{
+    position: absolute;
+    width: 10em;
+    font-size: 1.2em;
+    right: 53em;
+    top: 55em;
+}
+.coffeehid p{
+    line-height: 2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.breakfasthid{
+    position: absolute;
+    width: 15em;
+    right: 41em;
+    top: 90em;
+}
+.breakfasthid p{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
 /* INICIO SECTION2 */
 .section2{
     padding: 2em 0em;
@@ -234,6 +253,8 @@ p{
     text-align: center;
     font-family: 'Neucha', cursive;
     font-size: 1.5em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
 }
 /* FIN SECTION2 */
 /* INICIO SECTION3 */
@@ -308,6 +329,8 @@ padding: 0.5em;
     width: 100%;
     max-width: 50em;
     margin-top: 1.5em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
   }
 .break2{
     font-family: 'Gloria Hallelujah', cursive;
@@ -338,6 +361,9 @@ padding: 4em 0em;
 .news__txt{
     font-family: 'Neucha', cursive;
     padding-bottom: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
 form{
     width: 100%;
@@ -466,8 +492,25 @@ form{
     width:100%;
     display: flex;
 }
-
-
+.beans__main h3{
+    align-self: flex-end;
+}
+.coffee_bag{
+    border-radius: 10px;
+}
+.beanie{
+    width: 8em;
+    font-size: 6em;
+    padding-bottom: 0;
+    position: absolute;
+    top: 1.8em;
+    right: 4.4em;
+}
+.beanie2{
+    position: absolute;
+    top: 15em;
+    right: 20em;
+}
 
 a:link{
     text-decoration: none;
